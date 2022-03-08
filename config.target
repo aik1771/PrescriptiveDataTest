@@ -1,0 +1,2 @@
+config:
+	target: api.openweathermap.org/data/2.5/weather?lat={40.713}&lon={74.006}&appid={API key}
