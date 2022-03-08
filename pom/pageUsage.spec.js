@@ -19,7 +19,7 @@ describe('POM Implementation',()=> {
 
 
 	addOnlyTshirts(() => {
-		cy.get('*[id^="t-shirt"]')
+		loginPage.addOnlyTshirts()
 
 	});
 

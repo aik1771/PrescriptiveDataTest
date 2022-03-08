@@ -5,6 +5,7 @@ class LoginPage{
 		username: () => cy.get('#user-name'),
 		password: () => cy.get('#password'),
 		loginButton: () => cy.get('#login-button')
+		addOnlyTshirts: () => cy.get('*[id^="t-shirt"]');
 	}
 
 	enterUsername(username)
@@ -16,6 +17,15 @@ class LoginPage{
 	{
 		this.elements.passwordInput().type(password);
 	}
+
+	loginAction()
+	{
+		this.elements.loginButton().click();
+	}
+
+	addTocart()
+	{
+		this.elements.addOnlyTshirts().click()
+	}
 }
 
-module.ex
